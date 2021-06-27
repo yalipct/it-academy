@@ -15,6 +15,8 @@ public class Fase3 {
 		System.out.println("Introduce tu año de nacimiento:");
 		int anio=sc.nextInt();		
 		
+		sc.close();
+		
 		if((anio % 4 == 0 && anio % 100 != 0) || (anio % 100 == 0 && anio % 400 == 0)) {
 			
 			esBisiesto=true;
@@ -24,9 +26,8 @@ public class Fase3 {
 			esBisiesto=false;
 			falso="El año " + anio + " no es bisiesto.";
 			System.out.print(falso);
-		}
+		}		
 		
-		sc.close();
 		
 	}
 
